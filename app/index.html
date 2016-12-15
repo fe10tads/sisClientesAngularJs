@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+    <title></title>
+
+	<!-- Importamos o bootstrap pra dentro da aplicação -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+
+</head>
+<body>
+    <div ui-view>
+
+    </div>
+
+    <!-- Importamos o angular, ele tem que ser o primeiro arquivo -->
+    <script src="libs/angular.min.js"></script>
+
+    <!-- Importamos o arquivo de rotas -->
+    <script src="libs/angular-ui-router.js"></script>
+	
+    <!-- Importamos o arquivo que cria o modulo -->
+    <script src="modules/application/app.module.js"></script>
+
+    <!-- Importamos o arquivo de config -->
+    <script src="modules/application/app.config.js"></script>
+
+    <!-- Importamos o arquivo de config -->
+    <script src="modules/clientes/controllers/cliente.cadastrar.controller.js"></script>
+
+    <script src="modules/clientes/constants/cliente.constant.js"></script>
+
+    <script src="modules/clientes/services/cliente.service.js"></script>
+
+    <script src="modules/clientes/directives/cliente.formVerity.js"></script>
+</body>
+</html>
